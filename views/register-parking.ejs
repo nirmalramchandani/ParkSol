@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ParkingWeb</title>
+    <link rel="stylesheet" href="/styles/register-parking.css" />
+  </head>
+
+  <body>
+    <%- include("partials/header.ejs") %>
+
+    <main>
+      <h2>Register Your Parking Space</h2>
+
+      <form id="parkingForm">
+        <h3>Owner Details</h3>
+        <label>Full Name:</label>
+        <input type="text" id="full_name" required />
+
+        <label>Phone:</label>
+        <input type="text" id="phone" required />
+
+        <label>Email:</label>
+        <input type="email" id="email" required />
+
+        <label>ID Proof (Aadhar/PAN):</label>
+        <input type="text" id="id_proof" required />
+
+        <h3>Parking Space Details</h3>
+        <label>Lot Name:</label>
+        <input type="text" id="lot_name" required />
+
+        <label>Address:</label>
+        <textarea id="address" required></textarea>
+
+        <label>Total Slots:</label>
+        <input type="number" id="total_slots" required />
+
+        <label>City:</label>
+        <input type="text" id="city" required />
+
+        <label>State:</label>
+        <input type="text" id="state" required />
+
+        <label>Pincode:</label>
+        <input type="number" id="pincode" required />
+
+        <label>Area:</label>
+        <input type="text" id="area" required />
+
+        <h3>Slot Pricing</h3>
+        <label>Two-Wheeler Hourly Rate:</label>
+        <input type="number" id="two_wheeler_hourly" />
+
+        <label>Two-Wheeler Daily Rate:</label>
+        <input type="number" id="two_wheeler_daily" />
+
+        <label>Four-Wheeler Hourly Rate:</label>
+        <input type="number" id="four_wheeler_hourly" />
+
+        <label>Four-Wheeler Daily Rate:</label>
+        <input type="number" id="four_wheeler_daily" />
+
+        <label>Heavy Vehicle Hourly Rate:</label>
+        <input type="number" id="heavy_vehicle_hourly" />
+
+        <label>Heavy Vehicle Daily Rate:</label>
+        <input type="number" id="heavy_vehicle_daily" />
+
+        <h3>Parking Facilities</h3>
+        <label>CCTV:</label>
+        <select id="cctv">
+          <option value="No">No</option>
+          <option value="Yes">Yes</option>
+        </select>
+
+        <label>Security Guard:</label>
+        <select id="security_guard">
+          <option value="No">No</option>
+          <option value="Yes">Yes</option>
+        </select>
+
+        <label>EV Charging:</label>
+        <select id="ev_charging">
+          <option value="No">No</option>
+          <option value="Yes">Yes</option>
+        </select>
+
+        <label>Covered Parking:</label>
+        <select id="covered_parking">
+          <option value="No">No</option>
+          <option value="Yes">Yes</option>
+        </select>
+
+        <label>24/7 Availability:</label>
+        <select id="availability">
+          <option value="No">No</option>
+          <option value="Yes">Yes</option>
+        </select>
+
+        <h3>Payment & Agreement</h3>
+        <label>Preferred Payment Method:</label>
+        <input type="text" id="payment_method" required />
+
+        <label>
+          <input type="checkbox" id="terms" /> I accept the terms & conditions.
+        </label>
+        <button type="button" onclick="submitForm()">Register</button>
+      </form>
+    </main>
+
+    <%- include("partials/footer.ejs") %>
+  </body>
+  <script src="/scripts/register-parking.js"></script>
+</html>

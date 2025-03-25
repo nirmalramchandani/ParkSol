@@ -1,0 +1,71 @@
+.avl-lots {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  font-family: "Roboto Condensed", serif;
+  max-height: 60vh;
+  overflow-y: auto; 
+  white-space: nowrap;
+}
+
+.lot {
+  background-color: #393E46;
+  color: #EEEEEE;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr;
+  text-align: start;
+  align-items: center;
+  border-radius: 0.5rem;
+  border: 2px solid rgba(0, 0, 0, 0.211);
+  width: 30vw;
+  box-sizing: border-box;
+  margin-top: 2vh;
+  padding: 0.5rem 1rem;
+  row-gap: 1vh;
+  box-shadow: 0px 0.1rem 0.4rem #393E46;
+}
+.lot:hover{
+  background-color: #222831;
+  border: 2px solid #E93F33;
+}
+
+.lot-name {
+  grid-row: 1/2;
+  grid-column: 1/3;
+  font-weight: bold;
+  font-size: larger;
+  color: #FAD033;
+}
+.lot-name:hover{
+  color: #FFFFFF;
+}
+
+.lot-address {
+  color: #b0b0b0; 
+  grid-row: 2/3;
+  grid-column: 1/3;
+  font-weight: 600;
+}
+
+.lot-timing {
+  grid-row: 3/4;
+  grid-column: 1/2;
+  font-weight: 600;
+  background: #272727;
+  border-radius: 0.1rem;
+}
+.lot-timing strong {
+  color: #FAD033; /* Golden Yellow */
+}
+.lot-type {
+  grid-row: 3/4;
+  grid-column: 2/3;
+  font-weight: 600;
+  background: #272727;
+  border-radius: 0.1rem;
+}
+.lot-type strong {
+  color: #FAD033; /* Golden Yellow */
+}

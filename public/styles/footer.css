@@ -1,0 +1,33 @@
+footer {
+  background-color: #1e1e1e;
+  padding-top: 2vh;
+}
+.footer {
+  width: 76vw;
+  margin: 2vh auto 0px auto;
+  color: #d7d2be;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Helvetica, sans-serif;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: auto;
+  margin-top: 3vh;
+  justify-content: space-between;
+  line-height: 2em;
+}
+
+.column-heading {
+  color: rgb(255, 255, 255);
+  font-size: larger;
+  font-weight: 600;
+}
+.column a {
+  color: rgba(255, 255, 255, 0.444);
+}
+.footer-bottom {
+  margin-top: 2vh;
+  font-size: medium;
+}

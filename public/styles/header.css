@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #d7d2be;
+}
+#navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8vh;
+  width: 100vw;
+  max-width: 100vw;
+  gap: 30vw;
+  padding: 0 4rem;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  box-sizing: border-box;
+  background-color: #e93f33;
+  color: white;
+  box-shadow: 0px 0.1rem 0.1em #1e1e1e;
+}
+
+#logo {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.logoImg {
+  height: 4vh;
+  width: fit-content;
+  background-color: lightgray;
+  border-radius: 0.5rem;
+}
+.webName {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 1.8rem;
+}
+
+#navbar ul {
+  font-family: "Roboto Condensed", serif;
+  font-optical-sizing: auto;
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-style: normal;
+  display: flex;
+  align-items: end;
+  gap: 4vw;
+}
+#navbar ul li {
+  list-style: none;
+  box-sizing: border-box;
+}
+
+#navbar ul li:hover {
+  font-size: 1.2rem;
+  text-shadow: 0em 0em 0.6em #fad033ff;
+}
+
+#navbar ul li a {
+  color: white;
+  font-style: none;
+  text-decoration: none;
+}
+
+.loginBtn {
+  /* background-color: #FAD033; */
+  background-color: rgba(232, 147, 27, 0.673);
+  height: 4vmin;
+  border: 0px solid rgba(0, 0, 0, 0.201);
+  border-radius: 0.6rem;
+  padding: 0.1rem 1rem;
+  box-sizing: border-box;
+  box-shadow: inset 0em 0.1em 0.5em rgba(247, 107, 8, 0.967),
+    0em 0em 0.3em rgba(96, 64, 64, 0.884);
+  font-family: "Roboto Condensed", serif;
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.loginBtn:hover {
+  cursor: pointer;
+  background-color: #e0a800;
+}
+
+.line {
+  background-color: rgba(0, 0, 0, 0.47);
+  height: 1px;
+}

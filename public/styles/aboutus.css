@@ -1,0 +1,164 @@
+/* body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.image-container {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 10px;
+    
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ddd;
+   
+    
+    background-size: cover;
+}
+.image-container {
+    width: 100%;
+    height: 100%;
+    
+}
+.team-member {
+    width: 200px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.team-member img {
+    width: 2rem;
+    height: 2rem;
+    
+    margin-bottom: 10px;
+}
+
+.team-member h2 {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.team-member p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    background-color: white;
+    
+    font-size: 14px;
+}
+
+.social-links a:first-child {
+    background-color: white;
+}
+
+
+ /* General Styling */
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+/* Heading */
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-top: 12vh;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Team Container */
+.team-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* Team Member Cards */
+.team-member {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  width: 280px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.team-member:hover {
+  transform: scale(1.05);
+  /* border: 3px solid #e93f33; */
+}
+
+/* Profile Image */
+.team-member img {
+  width: 120px;
+  height: 120px;
+  border-radius: 1rem;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid #fad033;
+}
+
+/* Name */
+.team-member h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 0;
+}
+
+/* Role */
+.team-member p {
+  font-size: 1rem;
+  color: #666;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-links a img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-links a:hover img {
+  transform: scale(1.2);
+}

@@ -1,0 +1,119 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 12vh;
+  margin-bottom: 3vh;
+}
+
+.card {
+  width: 40vw;  
+  max-height: 65vh;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s ease-in-out;
+}
+
+.card.expanded {
+  width: 70vw; /* Expand width when search is performed */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto Condensed", serif;
+  padding: 3rem 0px;
+}
+
+.right-section {
+  width: 60%;
+  padding-left: 2rem;
+  display: none;
+}
+
+.card.expanded .right-section {
+  display: block;
+}
+
+.card.expanded .partation{
+  height: 61vh;
+  width: 0.2vw;
+  border-radius: 5%;
+  background-color: rgba(128, 128, 128, 0.307);
+  margin-left: 2rem;
+}
+
+.left-section > h2 {
+  color: black;
+  font-size: xx-large;
+  margin-bottom: 1.8rem;
+}
+
+.left-section > form {
+  color: #545863;
+  margin: 1vh auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-weight: 500;
+}
+
+.ipLoc {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.5rem;
+}
+
+#searchInput {
+  height: 5vmin;
+  width: 30vw;
+  border: none;
+  border-radius: 0.5rem;
+  padding-left: 1vw;
+  border: 1px solid rgba(0, 0, 0, 0.374);
+}
+
+.mapLocation {
+  background-color: white;
+  height: 5vmin;
+  width: 31vw;
+  border-radius: 0.5rem;
+  border: 2px solid rgba(0, 0, 0, 0.875);
+  font-family: "Roboto Condensed", serif;
+  font-weight: 500;
+  box-shadow: inset 0em 0.3rem 1rem rgba(172, 255, 47, 0.527);
+}
+.mapLocation:hover {
+  background-color: aliceblue;
+}
+
+.searchBtn {
+  background-color: #4daea1;
+  height: 4vmin;
+  width: fit-content;
+  border: 1px solid black;
+  border-radius: 0.6rem;
+  padding: 0.2rem 2rem;
+  margin: 0px auto;
+  box-sizing: border-box;
+  box-shadow: 0em 0em 0.2em rgba(96, 64, 64, 0.884);
+  font-family: "Roboto Condensed", serif;
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.searchBtn:hover {
+  background-color: #2b5624;
+  cursor: pointer;
+}
+
+.mapLoc{
+  margin-bottom: 2rem;
+}
+

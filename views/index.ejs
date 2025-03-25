@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ParkingWeb</title>
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/search-parking-results.css" />
+  </head>
+
+  <body>
+    <%- include("partials/header.ejs") %>
+
+    <main>
+      <div class="container">
+        <div class="card" id="searchCard">
+          <div class="left-section">
+            <h2>Search Parking Area</h2>
+            <form id="searchForm">
+              <div class="ipLoc">
+                <label for="location">Enter Parking Area Location</label>
+                <input
+                  id="searchInput"
+                  type="text"
+                  name="location"
+                  required
+                  placeholder=" City / Area / Parking"
+                />
+              </div>
+              <button type="submit" class="searchBtn">Search</button>
+            </form>
+            <div class="orOpt">OR</div>
+            <div class="mapLoc">
+              <button class="mapLocation">Use Current Location</button>
+            </div>
+            <div class="coute">Book the parking for just a few clicks!</div>
+          </div>
+
+          <div class="partation"></div>
+
+          <div class="right-section" id="results"></div>
+        </div>
+      </div>
+    </main>
+
+    <%- include("partials/footer.ejs") %>
+  </body>
+
+  <script src="/scripts/script.js"></script>
+</html>

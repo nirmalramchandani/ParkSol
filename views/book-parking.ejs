@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Parking</title>
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/book-parking.css" />
+  </head>
+  <body>
+    <%- include("partials/header.ejs") %>
+
+    <div class="booking-container">
+      <h1>Confirm Your Booking</h1>
+
+      <form id="bookingForm">
+        <label for="userName">Full Name:</label>
+        <input type="text" id="userName" name="userName" required />
+
+        <label for="contact">Contact Number:</label>
+        <input type="text" id="contact" name="contact" required />
+
+        <label for="vehicleNumber">Vehicle Number:</label>
+        <input type="text" id="vehicleNumber" name="vehicleNumber" required />
+
+        <label for="vehicleType">Vehicle Type:</label>
+        <select id="vehicleType" name="vehicleType" required>
+          <option value="Two-Wheeler">Two-Wheeler</option>
+          <option value="Four-Wheeler">Four-Wheeler</option>
+          <option value="Heavy Vehicle">Heavy Vehicle</option>
+        </select>
+
+        <p><strong>Entry Time:</strong> <span id="entryTime"></span></p>
+        <p><strong>Exit Time:</strong> <span id="exitTime"></span></p>
+
+        <button type="button" class="book-now" onclick="showPreview()">
+          Proceed to Preview
+        </button>
+      </form>
+    </div>
+
+    <!-- Booking Preview Modal (Hidden by Default) -->
+    <div id="previewModal" class="modal" style="display: none">
+      <div class="modal-content">
+        <h2>Booking Preview</h2>
+        <p><strong>Name:</strong> <span id="previewUserName"></span></p>
+        <p><strong>Contact:</strong> <span id="previewContact"></span></p>
+        <p>
+          <strong>Vehicle Number:</strong>
+          <span id="previewVehicleNumber"></span>
+        </p>
+        <p>
+          <strong>Vehicle Type:</strong> <span id="previewVehicleType"></span>
+        </p>
+        <p><strong>Entry Time:</strong> <span id="previewEntryTime"></span></p>
+        <p><strong>Exit Time:</strong> <span id="previewExitTime"></span></p>
+        <p>
+          <strong>Amount to be Paid:</strong>
+          <span id="previewAmount">Calculating...</span>
+        </p>
+
+        <button class="confirm-btn" onclick="confirmBooking()">
+          Confirm & Proceed to Payment
+        </button>
+        <button class="cancel-btn" onclick="closePreview()">Cancel</button>
+      </div>
+    </div>
+
+    <!-- ✅ Include Razorpay Script -->
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="/scripts/book-parking.js"></script>
+
+    <%- include("partials/footer.ejs") %>
+  </body>
+</html>

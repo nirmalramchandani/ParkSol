@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= parking.lot_name %></title>
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/parking-details.css" />
+  </head>
+  <body>
+    <%- include("partials/header.ejs") %>
+
+    <div class="parking-container">
+      <h1 class="parking-name"><%= parking.lot_name %></h1>
+      <p class="parking-address">
+        <strong>Address:</strong> <%= parking.address %>, <%= parking.city %>,
+        <%= parking.state %>
+      </p>
+
+      <!-- Availability Check Form -->
+      <form id="availabilityForm">
+        <label for="entryTime">Entry Time:</label>
+        <input type="datetime-local" id="entryTime" required />
+
+        <label for="exitTime">Exit Time:</label>
+        <input type="datetime-local" id="exitTime" required />
+
+        <button type="submit" class="book-now">Check Availability</button>
+      </form>
+
+      <p id="availability-message"></p>
+      <!-- Proceed Button (Hidden by Default) -->
+      <button
+        id="proceed-btn"
+        class="book-now"
+        style="display: none"
+        onclick="proceedToBooking()"
+      >
+        Proceed to Booking
+      </button>
+    </div>
+
+    <script src="/scripts/availability.js"></script>
+    <%- include("partials/footer.ejs") %>
+  </body>
+</html>

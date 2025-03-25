@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Receipt</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+        .receipt-container {
+            max-width: 500px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #E93F33;
+        }
+        .details {
+            text-align: left;
+            margin-top: 20px;
+        }
+        .details p {
+            margin: 5px 0;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #E93F33;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            background-color: #d1302b;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="receipt-container">
+        <h2>Payment Receipt</h2>
+        <p>Thank you for your payment!</p>
+
+        <div class="details">
+            <p><strong>Booking ID:</strong> #PS<%= parkingId %><%= bookingId %>F</p>
+            <p><strong>Name:</strong> <%= userName %></p>
+            <p><strong>Vehicle:</strong> <%= vehicleType %> - <%= vehicleNumber %></p>
+            <p><strong>Parking Slot:</strong> <%= parkingId %></p>
+            <p><strong>Entry Time:</strong> <%= entryTime %></p>
+            <p><strong>Exit Time:</strong> <%= exitTime %></p>
+            <p><strong>Amount Paid:</strong> ₹<%= amount %></p>
+            <p><strong>Transaction ID:</strong> <%= paymentId %></p>
+            <p><strong>Status:</strong> <%= paymentStatus %></p>
+        </div>
+
+        <a href="/" class="btn">Back to Home</a>
+    </div>
+
+</body>
+</html>

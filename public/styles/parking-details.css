@@ -1,0 +1,82 @@
+/* Parking Details Container */
+.parking-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Roboto Condensed", serif;
+  margin: auto;
+  margin-bottom: 5vh;
+  margin-top: 12vh;
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 12px;
+  width: 80%;
+  height: 55vh;
+  max-width: 800px;
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+/* Parking Name */
+.parking-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #FAD033; /* Golden Yellow */
+  margin-bottom: 10px;
+}
+
+/* Parking Address */
+.parking-address {
+  font-size: 16px;
+  color: #b0b0b0; /* Light Gray */
+  margin-bottom: 15px;
+}
+
+/* Availability Check Form */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  color: white;
+}
+
+/* Input Fields */
+input[type="datetime-local"] {
+  width: 80%;
+  max-width: 300px;
+  padding: 8px;
+  margin: 10px 0;
+  background: #272727;
+  border: 1px solid #444;
+  color: #ffffff;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+}
+
+/* Check Availability Button */
+.book-now {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #E93F33; /* Vibrant Red */
+  color: white;
+  border-radius: 6px;
+  transition: 0.3s;
+  cursor: pointer;
+  border: none;
+}
+
+.book-now:hover {
+  background-color: #c53030; /* Darker Red */
+}
+
+/* Availability Message */
+#availabilityMessage {
+  margin-top: 15px;
+  font-size: 16px;
+}
